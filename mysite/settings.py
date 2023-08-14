@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-lg9u0f*ml)req)yo@@0$vd!q%hep__h!om@$6d+lqe$-pqleum
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["naseni-auduab.b4a.run"]
+ALLOWED_HOSTS = [
+  'localhost',
+  '127.0.0.1',
+  'naseni-auduab.b4a.run']
 
 
 # Application definition
