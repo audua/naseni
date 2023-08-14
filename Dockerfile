@@ -8,8 +8,11 @@ WORKDIR /app
 COPY requirements.txt requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
+
 # Copy the rest of the project files
 COPY . .
+
+RUN python manage.py collectstatic --noinput
 
 # Expose the server port
 EXPOSE 8000
